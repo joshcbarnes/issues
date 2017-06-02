@@ -22,13 +22,32 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
+		<rosetta.version>182</rosetta.version>
 	</properties>
 
 	<dependencies>
+
+		<dependency>
+			<groupId>com.allocadia</groupId>
+			<artifactId>rosetta-runtime</artifactId>
+			<version>${rosetta.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.atlassian.jira</groupId>
+			<artifactId>jira-rest-java-client-core</artifactId>
+			<version>4.0.0</version>
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -39,6 +58,26 @@
 
 	<build>
 		<plugins>
+			<plugin>
+				<groupId>com.allocadia</groupId>
+				<artifactId>rosetta-maven-plugin</artifactId>
+				<version>${rosetta.version}</version>
+				<configuration>
+					<xmlConfigs>
+						<xmlConfig>${basedir}/src/main/resources/interface.xml</xmlConfig>
+					</xmlConfigs>
+					<entityPackageName>com.allocadia.api.dto</entityPackageName>
+					<outputDirectory>${project.build.directory}/generated-sources/rosetta</outputDirectory>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>rosetta-java-entity</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>

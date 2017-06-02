@@ -1,0 +1,32 @@
+<interface
+        xmlns="http://devtools.allocadia.com/rosetta/interface"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://devtools.allocadia.com/rosetta/interface http://devtools.allocadia.com/rosetta/interface-1.10.xsd">
+
+    <root>
+        <id/>
+    </root>
+
+    <enum name="Priority">
+        <value>
+            critical
+        </value>
+        <value>
+            high
+        </value>
+        <value>
+            medium
+        </value>
+        <value>
+            low
+        </value>
+    </enum>
+
+    <entity name="Issue">
+        <id/>
+        <property name="title" type="string"/>
+        <property name="description" type="string"/>
+        <property name="priority" type="Priority"/>
+    </entity>
+
+</interface>
