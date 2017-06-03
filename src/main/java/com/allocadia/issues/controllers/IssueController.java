@@ -13,11 +13,11 @@ import com.allocadia.issues.Service.IssuesService;
 
 @RestController
 public class IssueController {
-    
+
     @Autowired
     private IssuesService issuesService;
-    
-    @RequestMapping(method = RequestMethod.GET, value = "/issues")
+
+    @RequestMapping(method = RequestMethod.POST, value = "/issues")
     @ResponseStatus(value = HttpStatus.NO_CONTENT)
     public void create(@RequestBody Issue issue) {
     }

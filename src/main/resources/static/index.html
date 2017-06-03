@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Allocadia Issues</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Modak">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+        <link rel="stylesheet" type="text/css" href="./style.css">
+    </head>
+    <body>
+        <div class="title-bar">ISSUES</div>
+        <div class="content">
+            <div class="main">
+                <div class="title hidden">
+                    <label for="title">Issue Title</label>
+                    <textarea id="title" rows="1"></textarea>
+                </div>
+
+                <div class="description hidden">
+                    <label for="description">Description</label>
+                    <textarea id="description"></textarea>
+                </div>
+
+                <div class="priority hidden">
+                    <label for="priority-boxes">Priority</label>
+                    <div id="priority-boxes" class="priority-boxes">
+                        <button class="low-priority"></button>
+                        <button class="med-priority"></button>
+                        <button class="high-priority"></button>
+                        <button class="crit-priority"></button>
+                    </div>
+
+                    <textarea class="priority-description" readonly></textarea>
+                </div>
+
+                <button class="back hidden">&lt;</button>
+                <button class="forward hidden">&gt;</button>
+                <button class="go hidden">MEEP! &gt;</button>
+            </div>
+            <div class="beaker-overlay"></div>
+        </div>
+
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+        <script src="./index.js"></script>
+    </body>
+</html>

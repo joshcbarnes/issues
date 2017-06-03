@@ -1,0 +1,26 @@
+{
+    "low": [
+        "Low",
+        "",
+        "-This issue notes something that we believe to be a mistake in the product, but that doesn't impact users in a significant way"
+    ],
+    "med": [
+        "Medium",
+        "",
+        "-This issue makes for a bad user experience, or otherwise makes product-usage non-optimal in some significant way",
+        "-This issue should be addressed as time allows"
+    ],
+    "high": [
+        "High",
+        "",
+        "-This issue blocks a customer's time-sensitive workflow, but a workaround exists",
+        "-This issue blocks development, but blocked items are not due this release"
+    ],
+    "crit": [
+        "Critical",
+        "",
+        "-This issue introduces security, data integrity, or system stability issues",
+        "-This issue blocks a customer's time-sensitive workflow and no workaround exists",
+        "-This issue blocks development immediately"
+    ]
+}

@@ -1,0 +1,140 @@
+body {
+    background: #1d7220;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    margin: 15px;
+    font-size: 25px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.beaker-overlay {
+    background: url("./images/beaker.gif");
+
+    opacity: 0.5;
+
+    height: 711px;
+    width: 350px;
+}
+
+.title-bar {
+    font-family: 'Modak', cursive;
+    font-size: 100px;
+    line-height: 100px;
+}
+
+.hidden {
+    display: none;
+}
+
+.main > * {
+    margin-bottom: 25px;
+}
+
+.main label {
+    display: block;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.main textarea {
+    border: 0px;
+    background: #237f26;
+    color: #fff;
+    vertical-align: top;
+    resize: none;
+    width: 100%;
+    outline: none;
+    font-size: 20px;
+}
+
+.description textarea {
+    height: 400px;
+}
+
+.priority {
+    width: 100%;
+}
+
+.priority-description {
+    width: 100%;
+    height: 200px;
+    background-color: #237f26;
+}
+
+.priority-boxes {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-bottom: 25px;
+}
+
+.priority-boxes > button {
+    width: 100px;
+    height: 100px;
+    background-color: #237f26;
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.priority-boxes > button:hover {
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #2e9632;
+}
+
+.priority-boxes > button.selected {
+    background-color: #FF9D19;
+}
+
+.priority-boxes > button.selected:hover {
+    background-color: #FF9D19;
+}
+
+.low-priority, .low-priority:hover {
+    background-image: url("./images/low.svg");
+}
+
+.med-priority, .med-priority:hover {
+    background-image: url("./images/med.svg");
+}
+
+.high-priority, .high-priority:hover {
+    background-image: url("./images/high.svg");
+}
+
+.crit-priority, .crit-priority:hover {
+    background-image: url("./images/crit.svg");
+}
+
+button {
+    -webkit-border-radius: 25;
+    -moz-border-radius: 25;
+    border-radius: 25px;
+    border: 0px;
+    font-family: 'Modak', cursive;
+    color: #fff;
+    font-size: 50px;
+    background: #FF9D19;
+    padding: 5px 20px 5px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    background: #FFB419;
+    text-decoration: none;
+}
