@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.allocadia.api.dto.Issue;
-import com.allocadia.issues.Service.IssuesService;
+import com.allocadia.issues.service.IssuesService;
 
 @RestController
 public class IssueController {
@@ -18,7 +18,8 @@ public class IssueController {
     private IssuesService issuesService;
 
     @RequestMapping(method = RequestMethod.POST, value = "/issues")
-    @ResponseStatus(value = HttpStatus.NO_CONTENT)
+    @ResponseStatus(value = HttpStatus.CREATED)
     public void create(@RequestBody Issue issue) {
+        issuesService.createIssue(issue.getTitle(), issue.getDescription(), issue.getPriority());
     }
 }
