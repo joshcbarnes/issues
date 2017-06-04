@@ -1,0 +1,17 @@
+[{
+  "team": "Insights",
+  "tags": [
+    "analytics",
+    "export",
+    "connector"
+  ]}, {
+  "team": "Nameless",
+  "tags": [
+    "strategic"
+  ]}, {
+  "team": "Waffles",
+  "tags": [
+    "import",
+    "rules"
+  ]}
+]
