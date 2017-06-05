@@ -16,7 +16,7 @@ public class IssueController {
 
     @Autowired
     private IssuesService issuesService;
-
+    
     @RequestMapping(method = RequestMethod.POST, value = "/issues")
     @ResponseStatus(value = HttpStatus.CREATED)
     public void create(@RequestBody Issue issue) {

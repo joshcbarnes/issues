@@ -1,4 +1,4 @@
-package com.allocadia.issues.Dao;
+package com.allocadia.issues.dao;
 
 import org.springframework.stereotype.Component;
 
