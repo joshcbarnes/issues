@@ -3,7 +3,7 @@ package com.allocadia.issues.issueClassifier;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.allocadia.issues.Dao.TagDao;
+import com.allocadia.issues.dao.TagDao;
 import com.allocadia.issues.domainObject.Tag;
 
 import java.util.Collection;
