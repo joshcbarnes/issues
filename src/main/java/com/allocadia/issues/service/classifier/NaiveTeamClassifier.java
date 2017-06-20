@@ -1,10 +1,10 @@
-package com.allocadia.issues.issueClassifier;
+package com.allocadia.issues.service.classifier;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import com.allocadia.issues.dao.TagDao;
-import com.allocadia.issues.domainObject.Tag;
+import com.allocadia.issues.domain.Tag;
 
 import java.util.Collection;
 import java.util.HashMap;
@@ -17,7 +17,7 @@ public class NaiveTeamClassifier {
     private TagDao tagDao;
     
     public String classify(String title, String description) {
-        Collection<Tag> tags = tagDao.getFromFile();
+        Collection<Tag> tags = tagDao.getAll();
     
         Map<String, Double> titleScores = getScores(tags, Tokenizer.tokenize(title));
         Map<String, Double> descriptionScores = getScores(tags, Tokenizer.tokenize(description));

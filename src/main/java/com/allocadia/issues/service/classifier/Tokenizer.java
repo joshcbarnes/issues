@@ -1,4 +1,4 @@
-package com.allocadia.issues.issueClassifier;
+package com.allocadia.issues.service.classifier;
 
 import java.util.ArrayList;
 import java.util.Arrays;

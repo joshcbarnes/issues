@@ -1,4 +1,4 @@
-package com.allocadia.issues.controllers;
+package com.allocadia.issues.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -9,13 +9,13 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.allocadia.api.dto.Issue;
-import com.allocadia.issues.service.IssuesService;
+import com.allocadia.issues.service.IssueService;
 
 @RestController
 public class IssueController {
 
     @Autowired
-    private IssuesService issuesService;
+    private IssueService issuesService;
     
     @RequestMapping(method = RequestMethod.POST, value = "/issues")
     @ResponseStatus(value = HttpStatus.CREATED)

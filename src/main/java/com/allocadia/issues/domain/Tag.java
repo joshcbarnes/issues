@@ -1,4 +1,4 @@
-package com.allocadia.issues.domainObject;
+package com.allocadia.issues.domain;
 
 public class Tag {
     private String name;

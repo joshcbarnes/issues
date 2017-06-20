@@ -2,7 +2,7 @@ package com.allocadia.issues.dao;
 
 import org.springframework.stereotype.Component;
 
-import com.allocadia.issues.domainObject.Tag;
+import com.allocadia.issues.domain.Tag;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.google.gson.stream.JsonReader;
@@ -19,7 +19,7 @@ public class TagDao {
     private static final Type TeamType = new TypeToken<List<JsonTeam>>() {
     }.getType();
     
-    public List<Tag> getFromFile() {
+    public List<Tag> getAll() {
         Gson gson = new Gson();
         JsonReader reader = null;
         

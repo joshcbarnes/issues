@@ -4,10 +4,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import com.allocadia.api.dto.Priority;
-import com.allocadia.issues.issueClassifier.NaiveTeamClassifier;
+import com.allocadia.issues.service.classifier.NaiveTeamClassifier;
 
 @Component
-public class IssuesService {
+public class IssueService {
     
     @Autowired
     private NaiveTeamClassifier naiveTeamClassifier;
